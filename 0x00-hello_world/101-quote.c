@@ -12,5 +12,6 @@
 int main(void)
 {
 	char *s="and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	while (*s) putchar (*s++)
+	while (*s) putchar (*s++);
+	return (1);
 }
