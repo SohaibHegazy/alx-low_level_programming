@@ -11,10 +11,10 @@
 
 int main(void)
 {
-	printf("Size of a char: %c\n" $sizeof(char));
-	printf("Size of a integer: %i\n" $sizeof(int));
-	printf("Size of a long: %li\n" $sizeof(long));
-	printf("Size of a long long: %lli\n" $sizeof(long long));
-	printf("Size of a float: %f\n" $sizeof(float));
+	printf("Size of a char: %c byte(s)\n", $sizeof(char));
+	printf("Size of an integer: %i byte(s)\n", $sizeof(int));
+	printf("Size of a long: %li byte(s)\n", $sizeof(long int));
+	printf("Size of a long long: %lli byte(s)\n", $sizeof(long long int));
+	printf("Size of a float: %f byte(s)\n", $sizeof(float));
 	return (0);
 }
