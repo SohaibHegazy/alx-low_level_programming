@@ -1,7 +1,6 @@
 #include<stdio.h>
 
 /**
- *
  * main - entry point
  *
  * Description: a program to print without printf or puts
