@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: C program to write single digits of base 10 separated with commas and space
+ * Description: C program to write digits separated with commas and space
  *
  * Return: always 0
  *
