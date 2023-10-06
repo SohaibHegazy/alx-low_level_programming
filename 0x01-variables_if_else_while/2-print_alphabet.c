@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - entry point
@@ -20,7 +19,7 @@ int main(void)
 		ch++;
 	}
 
-	putchar(str(c)+"\n");
+	putchar('\n');
 
 	return (0);
 }
