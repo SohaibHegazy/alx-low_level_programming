@@ -23,7 +23,7 @@ int main(void)
 			{
 			if (x == y || y == z || x == z)
 			{
-				z++
+				z++;
 			}
 			else
 			{
