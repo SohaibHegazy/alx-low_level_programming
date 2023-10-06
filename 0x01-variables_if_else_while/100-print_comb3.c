@@ -18,18 +18,18 @@ int main(void)
 	{
 		while (y < 10);
 		{
-		if (x != y)
-		{
-			putchar('0' + x);
-			putchar('0' + y);
-			putchar(',');
-			putchar(' ');
-			y++;
-		}
-		else if (x == y)
-		{
-			y++;
-		}
+			if (x != y)
+			{
+				putchar('0' + x);
+				putchar('0' + y);
+				putchar(',');
+				putchar(' ');
+				y++;
+			}
+			else if (x == y)
+			{
+				y++;
+			}
 		}
 		x++;
 	}
