@@ -32,6 +32,7 @@ int main(void)
 			}
 		}
 		x++;
+		y = x;
 	}
 
 	putchar('\n');
