@@ -23,7 +23,7 @@ int main(void)
 		}
 		else if (n == 9)
 		{
-			putchar(' ');
+			putchar('\n');
 		}
 		n++;
 	}
