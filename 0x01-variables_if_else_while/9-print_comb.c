@@ -21,7 +21,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		else if (n = 9)
+		else if (n == 9)
 		{
 			putchar(' ');
 		}
