@@ -18,7 +18,8 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	puthchar(\n)
+
+	putchar(str(c)+"\n");
 
 	return (0);
 }
