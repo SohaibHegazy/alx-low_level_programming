@@ -22,9 +22,16 @@ int main(void)
 			{
 				putchar('0' + x);
 				putchar('0' + y);
-				putchar(',');
-				putchar(' ');
-				y++;
+				if (x == 8 && y == 9)
+				{
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+					y++;
+				}
 			}
 			else if (x == y)
 			{
