@@ -12,7 +12,7 @@
 int main(void)
 {
 	int n = 0;
-	char ch = 'A';
+	char ch = 'a';
 
 	while (n < 10)
 	{
@@ -20,7 +20,7 @@ int main(void)
 		n++;
 	}
 
-	while (ch <= 'F')
+	while (ch <= 'f')
 	{
 		putchar(ch);
 		ch++;
