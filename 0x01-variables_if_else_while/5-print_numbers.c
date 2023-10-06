@@ -15,7 +15,7 @@ int main(void)
 
 	while (n < 10)
 	{
-		putchar('%i', n);
+		putchar('0' + n);
 		n++;
 	}
 
