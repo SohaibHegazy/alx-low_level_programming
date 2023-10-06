@@ -11,9 +11,11 @@
 
 int main(void)
 {
-	-std=c11 for (char ch = 'a'; ch <= 'z'; ch++)
+	char ch = 'a';
+	while (ch <= 'z');
 	{
 		putchar(ch);
+		ch++;
 	}
 
 	return (0);
