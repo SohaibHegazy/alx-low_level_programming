@@ -16,7 +16,7 @@ int main(void)
 
 	while (x < 10)
 	{
-		while (y < 10);
+		while (y < 10)
 		{
 			if (x != y)
 			{
