@@ -45,7 +45,7 @@ int main(void)
 		a++;
 		b = a;
 	}
-	}
+
 
 	return (0);
 }
