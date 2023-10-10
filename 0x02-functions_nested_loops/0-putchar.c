@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
- *
+/*
  * main - function to write char
  *
  * Description: C program that prints _putchar then new line
