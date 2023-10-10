@@ -4,7 +4,7 @@
 /*
  * main - Entry point
  *
- * Description: program to print char
+ * Description: prints _putchar
  *
  * Return: always 0
  *
