@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
+/*
  *
- * _putchar - entry point
+ * _putchar - function to write char
  *
  * Description: C program that prints _putchar then new line
  *
