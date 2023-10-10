@@ -13,7 +13,14 @@
 
 int main(void)
 {
-	p();
+	int n = 0;
+	a[8] = "_putchar";
+
+	while (n < 9);
+	{
+		_putchar(a[n]);
+		n++;
+	}
 
 	return (0);
 }

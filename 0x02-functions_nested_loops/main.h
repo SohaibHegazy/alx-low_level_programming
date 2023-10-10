@@ -1,7 +1,9 @@
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
+#ifndef MAIN_H
+#define MAIN_H
 
-void p(void);
+#include <stdio.h>
+
+char _putchar(char ch);
 
 
 #endif
