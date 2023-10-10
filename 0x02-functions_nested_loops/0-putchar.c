@@ -2,7 +2,7 @@
 #include "main.h"
 
 /*
- * main - function to write char
+ * main - Entry point
  *
  * Description: C program that prints _putchar then new line
  *
