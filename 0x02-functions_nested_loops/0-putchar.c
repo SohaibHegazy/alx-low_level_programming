@@ -1,13 +1,11 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
+ * main- Entry point
  *
- * main - entry point
+ * Description: prints _putchar
  *
- * Description: program for print _putchar
- *
- * Return: always 0
+ * Return: Always 0
  *
  */
 
