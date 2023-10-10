@@ -3,7 +3,7 @@
 
 /**
  *
- * main - entry point
+ * _putchar - entry point
  *
  * Description: C program that prints _putchar then new line
  *
