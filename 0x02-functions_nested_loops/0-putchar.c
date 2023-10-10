@@ -14,7 +14,7 @@
 int main(void)
 {
 	int n = 0;
-	a[8] = "_putchar";
+	char a[8] = "_putchar";
 
 	while (n < 9);
 	{
