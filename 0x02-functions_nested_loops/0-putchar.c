@@ -16,9 +16,10 @@ int main(void)
 	int n = 0;
 	char a[8] = "_putchar";
 
-	while (n < 9);
+	while (n < 9)
 	{
 		_putchar(a[n]);
+		_putchar('\n');
 		n++;
 	}
 
