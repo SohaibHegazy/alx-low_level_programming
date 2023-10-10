@@ -3,7 +3,7 @@
 
 /*
  *
- * _putchar - function to write char
+ * main - function to write char
  *
  * Description: C program that prints _putchar then new line
  *

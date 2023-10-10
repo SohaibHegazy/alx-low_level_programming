@@ -3,7 +3,7 @@
 
 /**
  *
- * main - entry point
+ * _putchar - entry point
  *
  * Description: put char function
  *
