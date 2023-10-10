@@ -4,7 +4,7 @@
 /*
  * main - Entry point
  *
- * Description: C program that prints _putchar then new line
+ * Description: C program that prints _putchar
  *
  * Return: always 0
  *
