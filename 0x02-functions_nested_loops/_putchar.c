@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 /**
+ *
  * main - entry point
  *
  * Description: put char function
