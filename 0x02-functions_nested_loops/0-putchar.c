@@ -4,9 +4,7 @@
 /*
  * main - Entry point
  *
- * _putchar - function
- *
- * Description: C program that prints _putchar
+ * Description: program to print char
  *
  * Return: always 0
  *
