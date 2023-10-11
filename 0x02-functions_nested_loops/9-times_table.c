@@ -18,7 +18,7 @@ void times_table(void)
 	{
 		while (b < 10)
 		{
-			m = a * b;
+			m = (a + 48) * (b + 48);
 			_putchar(m + 48);
 			if (b == 9)
 			{
