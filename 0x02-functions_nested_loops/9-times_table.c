@@ -23,26 +23,47 @@ void times_table(void)
 			{
 				_putchar(' ');
 				_putchar(m + 48);
+				if (b == 9)
+				{
+					_putchar('\n');
+					b++;
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					b++;
 			}
 			else if (m < 10 && b == 0)
 			{
 				_putchar(m + 48);
+				if (b == 9)
+				{
+					_putchar('\n');
+					b++;
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					b++;
+				}
 			}
 			else if (m >= 10)
 			{
 				_putchar((m / 10) + 48);
 				_putchar((m % 10) + 48);
-			}
-			if (b == 9)
-			{
-				_putchar('\n');
-				b++;
-			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				b++;
+				if (b == 9)
+				{
+					_putchar('\n');
+					b++;
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					b++;
+				}
 			}
 		}
 		a++;
