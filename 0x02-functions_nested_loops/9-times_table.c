@@ -19,12 +19,12 @@ void times_table(void)
 		while (b < 10)
 		{
 			m = a * b;
-			if (m < 10 && m != 0)
+			if (m < 10 && b > 0)
 			{
 				_putchar(' ');
 				_putchar(m + 48);
 			}
-			else if (m == 0)
+			else if (m < 10 && b == 0)
 			{
 				_putchar(m + 48);
 			}
