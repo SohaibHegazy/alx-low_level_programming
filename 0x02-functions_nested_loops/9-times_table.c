@@ -18,8 +18,21 @@ void times_table(void)
 	{
 		while (b < 10)
 		{
-			m = (a + 48) * (b + 48);
-			_putchar(m + 48);
+			m = a * b;
+			if (m < 10 && m != 0)
+			{
+				_putchar(m + 48);
+				_putchar(m + 48);
+			}
+			else if (m == 0)
+			{
+				_putchar(m + 48);
+			}
+			else
+			{
+				_putchar((m / 10) + 48);
+				_putchar((m % 10) + 48);
+			}
 			if (b == 9)
 			{
 				_putchar('\n');
