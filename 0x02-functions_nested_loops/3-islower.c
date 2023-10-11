@@ -4,6 +4,7 @@
  * _islower - entry point
  *
  * Description: checks if letter is lowercase
+ * @c: character to be checked
  *
  * Return: 1 if lower and 0 if else
  */
