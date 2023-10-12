@@ -11,8 +11,8 @@
  *
  */
 
-extern char ch;
-char _putchar(char ch)
+extern int ch;
+int _putchar(int c)
 {
-	putchar(ch);
+	putchar(c);
 }
