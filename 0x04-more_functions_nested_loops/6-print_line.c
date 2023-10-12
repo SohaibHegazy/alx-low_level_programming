@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_line - entry point
@@ -10,6 +11,9 @@
 
 void print_line(int n)
 {
+	int n;
+
+	scanf("%d", n);
 	while (n--)
 	{
 		_putchar('_');
