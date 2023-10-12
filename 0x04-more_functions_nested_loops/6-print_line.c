@@ -5,6 +5,7 @@
  * print_line - entry point
  *
  * Description: draw st line
+ * @n: input
  *
  * Return: void
  */
