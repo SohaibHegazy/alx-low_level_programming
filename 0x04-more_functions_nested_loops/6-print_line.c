@@ -18,10 +18,13 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-	while (x <= n)
+	else
 	{
-		_putchar('_');
-		x++;
+		while (x <= n)
+		{
+			_putchar('_');
+			x++;
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
