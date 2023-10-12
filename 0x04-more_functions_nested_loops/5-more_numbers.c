@@ -11,11 +11,13 @@
 void more_numbers(void)
 {
 	int t = 0;
-	int n = 0;
+	int n;
 	int u;
 
 	while (t < 10)
 	{
+		n = 0;
+
 		while (n < 15)
 		{
 			if (n > 9)
