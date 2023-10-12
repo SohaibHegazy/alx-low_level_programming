@@ -4,6 +4,7 @@
  * print_square - entry point
  *
  * Description: draw square
+ * @size: length of square side
  *
  * Return: void
  */
