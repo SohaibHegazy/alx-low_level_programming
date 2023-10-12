@@ -27,6 +27,7 @@ void more_numbers(void)
 			u = n % 10;
 			_putchar(u + 48);
 			n++;
+			_putchar('\n');
 		}
 		t++
 	}
