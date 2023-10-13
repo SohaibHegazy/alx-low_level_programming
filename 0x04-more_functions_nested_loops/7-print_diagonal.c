@@ -4,6 +4,7 @@
  * print_diagonal - entry point
  *
  * Description: draw diagonal
+ * @n: input
  *
  * Return: void
  */
