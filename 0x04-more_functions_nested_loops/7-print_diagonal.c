@@ -11,15 +11,19 @@
 void print_diagonal(int n)
 {
 	int s = 0;
-	int n;
+	int x = 0;
 
-	while (n--)
+	while (x < n)
 	{
-		while (s--)
+		int c = 0;
+
+		while (c < s)
 		{
 			_putchar(' ');
+			c++;
 		}
 		s++;
+		x++;
 		_putchar('\');
 		_putchar('\n');
 	}
