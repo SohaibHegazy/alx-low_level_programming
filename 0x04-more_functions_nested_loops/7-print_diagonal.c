@@ -14,19 +14,27 @@ void print_diagonal(int n)
 	int s = 0;
 	int x = 0;
 
-	while (x < n)
+	if (n <= 0)
 	{
-		int c = 0;
-
-		while (c < s)
-		{
-			_putchar(' ');
-			c++;
-		}
-		s++;
-		x++;
-		_putchar('\\');
 		_putchar('\n');
+	}
+	else
+	{
+		while (x < n)
+		{
+			int c = 0;
+
+			while (c < s)
+			{
+				_putchar(' ');
+				c++;
+			}
+			s++;
+			x++;
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
 	}
 	_putchar('\n');
 }
