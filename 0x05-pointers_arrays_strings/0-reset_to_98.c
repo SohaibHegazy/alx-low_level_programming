@@ -5,6 +5,7 @@
  * reset_to_98 - entry point
  *
  * Description: pointer
+ * @n: input
  *
  * Return: void
  */
