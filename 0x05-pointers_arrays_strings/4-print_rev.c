@@ -20,9 +20,9 @@ void print_rev(char *s)
 	}
 	while (i >= 0)
 	{
-		s--;
 		_putchar(*s);
 		i--;
+		s--;
 	}
 	_putchar('\n');
 }
