@@ -19,13 +19,13 @@ char *_strcpy(char *dest, char *src)
 	{
 		for (i = 0; *src != 0; i++, src++, dest++)
 		{
-			*dest = &*src;
+			*dest = *src;
 		}
 	}
 	else if (*src == '\0')
 	{
 		src++;
 		dest++;
-		*dest = &*src;
+		*dest = *src;
 	}
 }
