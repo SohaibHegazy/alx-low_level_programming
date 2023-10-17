@@ -13,20 +13,17 @@
 void rev_string(char *s)
 {
 	int i;
-	int n;
+	char *t = &*s;
 
-	for (i = 0; *s != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
+	{
 		;
-	char (*t)[i];
-
-	for (i = 0; *s != '\0'; i++)
-	{
-		t[i] = s[i]
 	}
-
-	for (n = 0; i >= 0; n++)
+	while (i - 1 > 0)
 	{
-		*s[n] = *t[i];
+		*s = t[i - 1];
+		s++;
 		i--;
 	}
+
 }
