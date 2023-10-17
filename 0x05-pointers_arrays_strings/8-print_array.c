@@ -23,11 +23,12 @@ void print_array(int *a, int n)
 		}
 		else if (i == n - 1)
 		{
-			printf("%d\n", *a);
+			printf("%d", *a);
 		}
 		i++;
 		a++;
 	}
+	printf("\n");
 }
 
 
