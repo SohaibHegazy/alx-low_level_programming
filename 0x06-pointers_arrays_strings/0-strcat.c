@@ -5,8 +5,8 @@
  * *_strcat - the function
  *
  * Description: cat two strings
- * @*src: input
- * @*dest: input
+ * @src: input
+ * @dest: input
  *
  * Return: char
  */
@@ -21,5 +21,5 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[n] = src[m];
 	}
-	return(dest);
+	return (dest);
 }
