@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *_strcat - the function
+ * *_strncat - the function
  *
  * Description: cat two strings like strncat
  * @src: input
