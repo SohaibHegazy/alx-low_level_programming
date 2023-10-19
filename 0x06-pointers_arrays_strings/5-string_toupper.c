@@ -5,6 +5,7 @@
  * *string_toupper - the function
  *
  * Description: change lowercase into uppercase
+ * @s: input
  *
  * Return: char
  */
