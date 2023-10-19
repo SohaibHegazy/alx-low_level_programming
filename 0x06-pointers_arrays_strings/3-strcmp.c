@@ -13,11 +13,11 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i;
+	int i = 0;
 
 	while (*s1 != '\0')
 	{
-		i = (48 + (int)*s1) - (48 + (int)*s2);
+		i = (int)*s1 - (int)*s2;
 		if (i == 0 + 48)
 		{
 			s1++;
