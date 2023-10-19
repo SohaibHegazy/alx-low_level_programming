@@ -20,14 +20,13 @@ int _strcmp(char *s1, char *s2)
 		i = (48 + (int)*s1) - (48 + (int)*s2);
 		if (i == 0 + 48)
 		{
-			continue;
+			s1++;
+			s2++;
 		}
 		else if (i != 0 + 48)
 		{
 			break;
 		}
-		s1++;
-		s2++;
 	}
 	return (i);
 }
