@@ -17,12 +17,12 @@ int _strcmp(char *s1, char *s2)
 
 	while (*s1 != '\0')
 	{
-		i = (int)*s1 - (int)*s2;
-		if (i == 0)
+		i = (48 + (int)*s1) - (48 + (int)*s2);
+		if (i == 0 + 48)
 		{
 			continue;
 		}
-		else if (i != 0)
+		else if (i != 0 + 48)
 		{
 			break;
 		}
