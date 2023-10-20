@@ -12,17 +12,19 @@
 
 char *rot13(char *s)
 {
+	int i;
 	char *str = s;
+	char r[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*s != '\0')
 	{
-		if ((*s - 65 > 13 && *s - 65 < 26) || (*s - 97 > 13 && *s - 97 < 26))
+		for (i = 0; i < 52; i++)
 		{
-			*s = *s - 13;
-		}
-		else if ((*s - 65 > 13) || (*s - 97 > 13))
-		{
-			*s = *s + 13;
+			if (*s == r[i])
+			{
+				*s = rot[i];
+			}
 		}
 		s++;
 	}
