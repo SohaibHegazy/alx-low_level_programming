@@ -2,6 +2,26 @@
 #include <stdio.h>
 
 /**
+ * sep - the function
+ *
+ * Descritpion: detects the existance of separators
+ * @ch: input character
+ *
+ * Return: 0 if false and 1 if true
+ */
+
+int sep(char ch)
+{
+	int i;
+	char c[] = " \t\n,;.!?\"(){}";
+
+	for (i = 0; i < (sizeof(c) / sizeof(char)); i++)
+		if (ch == c[i])
+			return (1);
+	return (0);
+}
+
+/**
  * *cap_string - the function
  *
  * Description: Capitalize all words of a string
@@ -12,30 +32,17 @@
 
 char *cap_string(char *s)
 {
-	int a;
-	int sep;
-	int b;
-	int lower;
-
 	while (*s != '\0')
 	{
-		if (*s == ' ' || '\t' || '\n' || ',' || '.' || '"' || '!' || '?' || '(' || ')' || '{' || '}' || ';')
+		if (sep(*s))
 		{
-			if (*s > 96 && *s < 123)
-			{
-				*s = *s - 32;
-			}
-			else
-			{
-				continue;
-			}
-		}
-		else
-		{
-			continue;
-		}
 		s++;
+		if (*s > 96 && *s < 123)
+		{
+			*s = *s - 32;
+		}
+		}
+	s++;
 	}
 	return (s);
 }
- 
