@@ -32,15 +32,22 @@ int sep(char ch)
 
 char *cap_string(char *s)
 {
+	int separator = 0;
+
 	while (*s != '\0')
 	{
 		if (sep(*s))
 		{
-		s++;
-		if (*s > 96 && *s < 123)
+		separator = 1;
+		}
+		else if (*s > 96 && *s < 123 && separator == 1)
 		{
 			*s = *s - 32;
+			separator = 0;
 		}
+		else
+		{
+			separator = 0;
 		}
 	s++;
 	}
