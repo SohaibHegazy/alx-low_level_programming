@@ -15,7 +15,7 @@ int sep(char ch)
 	int i;
 	char c[] = " \t\n,;.!?\"(){}";
 
-	for (i = 0; i < 12; i++)
+	for (i = 0; i < 13; i++)
 		if (ch == c[i])
 			return (1);
 	return (0);
