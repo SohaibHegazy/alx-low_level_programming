@@ -32,6 +32,7 @@ int sep(char ch)
 
 char *cap_string(char *s)
 {
+	char *str = s;
 	int separator = 0;
 
 	while (*s != '\0')
@@ -51,5 +52,5 @@ char *cap_string(char *s)
 		}
 	s++;
 	}
-	return (s);
+	return (str);
 }
