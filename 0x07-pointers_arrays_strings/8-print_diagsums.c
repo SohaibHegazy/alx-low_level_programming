@@ -6,6 +6,7 @@
  *
  * Description: prints the sum of diagonal of square matrix
  * @a: the input matrix
+ * @size: size of array
  *
  * Return: void
  */
@@ -17,7 +18,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		sum1 = sum1 + a[i];
-		sum2 = sum2 + a[size -1 -i];
+		sum2 = sum2 + a[size - 1 - i];
 		a = a + size;
 	}
 	printf("%d, ", sum1);
