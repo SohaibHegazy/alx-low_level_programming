@@ -3,7 +3,7 @@
 /**
  * _strspn - the function
  *
- * Description: looks for the position where first character doesn't belong to a string
+ * Description: looks for position where character doesn't belong to a string
  * @s: input string
  * @accept: string of accepted characters
  *
