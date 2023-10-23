@@ -16,19 +16,15 @@ char *_strchr(char *s, char c)
 	int i;
 	char *ptr = s;
 
-	for (i = 0; s[i] != c && s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			ptr = (s + i);
-		}
-		else
-		{
-			ptr = NULL;
+			return (s + i);
 		}
 	}
 
-	return (ptr);
+	return (NULL);
 }
 
 
