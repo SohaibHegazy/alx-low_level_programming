@@ -5,6 +5,7 @@
  *
  * Description: gets sqrt of n
  * @n: input number
+ * @i: trial value
  *
  * Return: int
  */
