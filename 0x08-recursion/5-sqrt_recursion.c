@@ -32,8 +32,6 @@ int s(n, i)
 {
 	if (i * i < n)
 	{
-		s(n, i + 1);
+		return (s(n, i + 1));
 	}
-	else 
-		return (-1);
 }
