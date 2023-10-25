@@ -23,6 +23,16 @@ int is_prime_number(int n)
 		return (p(n, 2));
 	}
 }
+/**
+ * p - supporting function
+ *
+ * Description: find if n is a prime number
+ * @n: input integer
+ * @n2: supporting number
+ *
+ * Return: int
+ */
+
 int p(int n, int n2)
 {
 	if (n2 == n)
