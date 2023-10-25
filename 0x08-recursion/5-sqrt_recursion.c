@@ -39,4 +39,8 @@ int s(int n, int i)
 	{
 		return (i);
 	}
+	else
+	{
+		return (-1);
+	}
 }
