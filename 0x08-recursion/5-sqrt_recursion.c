@@ -36,5 +36,7 @@ int s(int n, int i)
 		return (s(n, i + 1));
 	}
 	else if (i * i == n)
+	{
 		return (i);
+	}
 }
