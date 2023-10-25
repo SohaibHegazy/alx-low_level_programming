@@ -34,4 +34,6 @@ int s(n, i)
 	{
 		s(n, i + 1);
 	}
+	else 
+		return (-1);
 }
