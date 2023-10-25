@@ -9,6 +9,7 @@
  * Return: int
  */
 
+int s(n, i);
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -34,6 +35,6 @@ int s(n, i)
 	{
 		return (s(n, i + 1));
 	}
-	else
-		return (-1);
+	else if (i * i == n)
+		return (i);
 }
