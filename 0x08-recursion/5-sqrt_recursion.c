@@ -29,7 +29,7 @@ int _sqrt_recursion(int n)
  * Return: int
  */
 
-int s(n, i)
+int s(int n, int i)
 {
 	if (i * i < n)
 	{
