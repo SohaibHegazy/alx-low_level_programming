@@ -1,0 +1,37 @@
+#include "main.h"
+
+/**
+ * _sqrt_recursion - the function
+ *
+ * Description: gets sqrt of n
+ * @n: input number
+ *
+ * Return: int
+ */
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	return (s(n, 1));
+}
+
+/**
+ * s - the function
+ *
+ * Description: supporting function to find the sqrt
+ * @n: input number
+ * @i: trial value
+ *
+ * Return: int
+ */
+
+int s(n, i)
+{
+	if (i * i < n)
+	{
+		s(n, i + 1);
+	}
+}
