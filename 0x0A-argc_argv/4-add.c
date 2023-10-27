@@ -6,7 +6,7 @@
  *
  * Description: adds positive ineteger
  * @argc: number of arguments
- * @argv[]: array of arguments
+ * @argv: array of arguments
  *
  * Return: 0 if true and 1 if Error
  */
