@@ -6,7 +6,7 @@
  *
  * Description: writes the name of the program
  * @argc: number of arguments
- * @argv[]: array of arguments
+ * @argv: array of arguments
  *
  * Return: always 0
  */
