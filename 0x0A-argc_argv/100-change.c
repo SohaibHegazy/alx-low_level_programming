@@ -37,7 +37,7 @@ int main(int argc, const char *argv[])
 					cents = cents % coin[i];
 				}
 			}
-			printf("%d\n" change);
+			printf("%d\n", change);
 			return (0);
 		}
 	}
