@@ -3,7 +3,7 @@
 
 /**
  * main - main function
- * 
+ *
  * Description: get the least amount of coins in change
  * @argc: number of arguments
  * @argv: array of arguments
@@ -23,7 +23,7 @@ int main(int argc, const char *argv[])
 		else
 		{
 			int i, cents = atoi(argv[1]), change = 0;
-			int coin[5] = {25, 10, 5, 2 ,1};
+			int coin[5] = {25, 10, 5, 2, 1};
 
 			for (i = 0; i < 5; i++)
 			{
