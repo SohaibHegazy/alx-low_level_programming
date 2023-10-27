@@ -11,7 +11,7 @@
  * Return: 0 if true and 1 if error
  */
 
-int main(int argc, const char * argv[])
+int main(int argc, const char *argv[])
 {
 	int mul = 0;
 

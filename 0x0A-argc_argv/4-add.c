@@ -11,7 +11,7 @@
  * Return: 0 if true and 1 if Error
  */
 
-int main(int argc, const char * argv[])
+int main(int argc, const char *argv[])
 {
 	int i, sum = 0;
 

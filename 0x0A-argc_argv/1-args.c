@@ -10,7 +10,7 @@
  * Return: always 0
  */
 
-int main(int argc, const char * argv[])
+int main(int argc, const char *argv[])
 {
 	printf("%d\n", argc - 1);
 	return (0);
