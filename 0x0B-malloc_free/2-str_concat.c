@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 		size1 = 0;
 	}
 	else
-	{	
+	{
 		size1 = strlen(s1);
 	}
 
@@ -54,5 +54,5 @@ char *str_concat(char *s1, char *s2)
 		}
 		return (ptr);
 	}
-	free (ptr);
+	free(ptr);
 }
