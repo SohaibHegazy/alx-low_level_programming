@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib>
 
 /**
  * alloc_grid - the function
@@ -25,4 +26,5 @@ int **alloc_grid(int width, int height)
 		ptr = (int *)calloc(size, sizeof(int));
 		return (ptr);
 	}
+	free(ptr);
 }
