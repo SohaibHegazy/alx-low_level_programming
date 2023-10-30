@@ -44,11 +44,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		for (i = 0; *s1 != '\0'; i++)
+		for (i = 0; i < size1; i++)
 		{
 			ptr[i] = s1[i];
 		}
-		for (n = 0; *s2 != '\0'; n++, i++)
+		for (n = 0; n < size2; n++, i++)
 		{
 			ptr[i] = s2[n];
 		}
