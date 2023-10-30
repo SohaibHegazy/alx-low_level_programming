@@ -16,15 +16,22 @@ int **alloc_grid(int width, int height)
 	int **ptr = NULL;
 	int size = 0;
 
-	if (width <= 48 || height <= 48)
+	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 	else
 	{
 		size = width * height;
-		*ptr = (int *)calloc(size, sizeof(int));
-		return (ptr);
+		ptr = (int *)calloc(size, sizeof(int));
+		if (ptr == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			return (ptr);
+		}
 	}
 	free(ptr);
 }
