@@ -23,8 +23,8 @@ int **alloc_grid(int width, int height)
 	else
 	{
 		size = width * height;
-		*ptr = (int **)calloc(size, sizeof(int));
-		if (*ptr == NULL)
+		ptr = (int **)calloc(size, sizeof(int));
+		if (ptr == NULL)
 		{
 			return (NULL);
 		}
