@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 		size1 = strlen(s1);
 	}
 
-	if (s2 == NULL);
+	if (s2 == NULL)
 	{
 		size2 = 0;
 	}
