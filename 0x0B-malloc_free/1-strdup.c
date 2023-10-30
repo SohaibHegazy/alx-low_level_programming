@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * strdup - the function
+ * _strdup - the function
  *
  * Description: duplicates the input string
  * @str: input string
@@ -32,11 +32,12 @@ char *_strdup(char *str)
 		}
 		else
 		{
-			for (i = 0; *str != '\0'; i++)
+			for (i = 0; i < size ; i++)
 			{
 				ptr[i] = str[i];
 			}
 			return (ptr);
 		}
 	}
+	free(ptr);
 }
