@@ -18,8 +18,24 @@ char *str_concat(char *s1, char *s2)
 	char *ptr = NULL;
 	int i, n, size1 = 0, size2 = 0;
 
-	size1 = strlen(s1);
-	size2 = strlen(s2);
+	if (s1 == NULL)
+	{
+		size1 = 0;
+	}
+	else
+	{	
+		size1 = strlen(s1);
+	}
+
+	if (s2 == NULL);
+	{
+		size2 = 0;
+	}
+	else
+	{
+		size2 = strlen(s2);
+	}
+
 	ptr = (char *)malloc((size1 * (sizeof(*s1))) + (size2 * (sizeof(*s2))) + 1);
 
 	if (ptr == NULL)
