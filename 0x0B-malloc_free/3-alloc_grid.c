@@ -24,7 +24,7 @@ int **alloc_grid(int width, int height)
 	{
 		size = width * height;
 		*ptr = (int *)calloc(size, sizeof(int));
-		return (*ptr);
+		return (ptr);
 	}
-	free(*ptr);
+	free(ptr);
 }
