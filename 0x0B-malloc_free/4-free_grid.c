@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * ree_grid - the function
+ * free_grid - the function
  *
  * Description: free the allocated memory
  * @grid: the 2D array
