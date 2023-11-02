@@ -17,8 +17,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int count = 0;
-	int i = 0, m = 0;
-	int l1, l2;
+	unsigned int i = 0, m = 0;
+	unsigned int l1, l2;
 	char *ptr;
 
 	l1 = strlen(s1);
