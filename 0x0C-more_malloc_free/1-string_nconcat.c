@@ -16,27 +16,17 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int count = 0;
-	unsigned int i, j;
-	unsigned int l1, l2;
+	unsigned int count, i, j, l1, l2;
 	char *ptr;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-
 	l1 = strlen(s1);
 	l2 = strlen(s2);
-
 	if (l2 <= n)
-	{
 		count = l1 + l2 + 1;
-	}
 	else
 	{
 		count = l1 + n + 1;
