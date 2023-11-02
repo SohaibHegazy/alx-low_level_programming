@@ -44,5 +44,5 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	for (i = 0; i < min_size; i++)
 		*((char *)m + i) = *((char *)ptr + i);
 	return (m);
-	free(m);
+	free(ptr);
 }
