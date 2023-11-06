@@ -3,7 +3,7 @@
 
 /**
  * init_dog - the function
- * 
+ *
  * Description: initialize the struct dog
  * @d: struct object
  * @name: name of dog
