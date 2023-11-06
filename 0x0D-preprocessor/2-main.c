@@ -1,7 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-#ifndef P
-#define P printf("%s\n",__FILE__);
+/**
+ * main - main function
+ *
+ * Description: prints file name followed by new line
+ *
+ * Return: always 0
+ */
 
-#endif
+int main()
+{
+	printf("%s\n",__FILE__);
+	return 0;
+}
