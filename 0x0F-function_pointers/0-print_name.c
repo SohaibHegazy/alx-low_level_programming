@@ -7,7 +7,6 @@
  * Description: function that prints name
  * @name: input name
  * @f: pointer to a function that takes arg of char
- * @char: argument of function
  *
  * Return: void
  */
