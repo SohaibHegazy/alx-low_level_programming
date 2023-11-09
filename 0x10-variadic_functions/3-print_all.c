@@ -74,15 +74,15 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j = 0;
 	char *sep = "";
+	va_list args;
 
 	type t[] = {
 		{"c", format_c},
 		{"i", format_i},
 		{"f", format_f},
-		{"s", format_s}
+		{"s", format_s},
+		{NULL, NULL}
 	};
-
-	va_list args;
 
 	va_start(args, format);
 
