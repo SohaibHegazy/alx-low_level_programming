@@ -57,7 +57,8 @@ void format_s(char *sep, va_list args)
 {
 	char *ptr = va_arg(args, char *);
 
-	if (!ptr)
+	switch ((int)(!ptr))
+	case 1:
 		ptr = "(nil)";
 	printf("%s%s", sep, ptr);
 }
