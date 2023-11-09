@@ -9,7 +9,7 @@ void print_all(const char * const format, ...);
 
 typedef struct var_type
 {
-	char c;
+	char *c;
 	void (*f)(char *, va_list);
 } type;
 
