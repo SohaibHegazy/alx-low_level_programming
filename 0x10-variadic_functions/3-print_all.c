@@ -90,7 +90,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (t[j].c)
 		{
-			if (format[i] == t[j].c[0])
+			if (format[i] == t[j].c)
 			{
 				t[j].f(sep, args);
 				sep = ", ";
