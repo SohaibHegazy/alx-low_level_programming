@@ -60,6 +60,7 @@ void format_s(char *sep, va_list args)
 	switch ((int)(!ptr))
 	case 1:
 		ptr = "(nil)";
+
 	printf("%s%s", sep, ptr);
 }
 
