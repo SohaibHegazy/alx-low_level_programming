@@ -75,10 +75,10 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 
 	type t[] = {
-		{'c', format_c},
-		{'i', format_i},
-		{'f', format_f},
-		{'s', format_s},
+		{"c", format_c},
+		{"i", format_i},
+		{"f", format_f},
+		{"s", format_s},
 		{NULL, NULL}
 	};
 
