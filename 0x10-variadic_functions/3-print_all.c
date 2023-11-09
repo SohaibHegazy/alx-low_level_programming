@@ -77,10 +77,10 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	type t[] = {
-		{"c", format_c},
-		{"i", format_i},
-		{"f", format_f},
-		{"s", format_s},
+		{'c', format_c},
+		{'i', format_i},
+		{'f', format_f},
+		{'s', format_s},
 		{NULL, NULL}
 	};
 
