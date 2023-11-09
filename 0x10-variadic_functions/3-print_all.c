@@ -77,10 +77,11 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	type t[] = {
-		{'c', format_c},
-		{'i', format_i},
-		{'f', format_f},
-		{'s', format_s}
+		{"c", format_c},
+		{"i", format_i},
+		{"f", format_f},
+		{"s", format_s},
+		{NULL, NULL},
 	};
 
 	va_start(args, format);
@@ -90,7 +91,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (t[j].c)
 		{
-			if (format[i] == t[j].c)
+			if (format[i] == t[j].c[0])
 			{
 				t[j].f(sep, args);
 				sep = ", ";
