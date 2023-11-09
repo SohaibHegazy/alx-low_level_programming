@@ -56,7 +56,7 @@ void format_f(char *sep, va_list args)
 void format_s(char *sep, va_list args)
 {
 	char *ptr = va_arg(args, char *);
-	
+
 	if (!ptr)
 		ptr = "(nil)";
 	printf("%s%s", sep, ptr);
@@ -75,17 +75,17 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 
 	type t[] = {
-		{"c", format_c},
-		{"i", format_i},
-		{"f", format_f},
-		{"s", format_s},
+		{'c', format_c},
+		{'i', format_i},
+		{'f', format_f},
+		{'s', format_s},
 		{NULL, NULL}
 	};
 
 	va_list args;
 
 	va_start(args, format);
-	
+
 	while (format && format[i])
 	{
 		j = 0;
