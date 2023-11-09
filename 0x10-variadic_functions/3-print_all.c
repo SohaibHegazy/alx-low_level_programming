@@ -79,8 +79,7 @@ void print_all(const char * const format, ...)
 		{"c", format_c},
 		{"i", format_i},
 		{"f", format_f},
-		{"s", format_s},
-		{NULL, NULL}
+		{"s", format_s}
 	};
 
 	va_list args;
