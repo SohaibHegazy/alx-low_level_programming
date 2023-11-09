@@ -73,6 +73,7 @@ void format_s(char *sep, va_list args)
 void print_all(const char * const format, ...)
 {
 	int i = 0, j = 0;
+	char *sep = "";
 
 	type t[] = {
 		{"c", format_c},
@@ -89,9 +90,9 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (t[j].op)
+		while (t[j].c)
 		{
-			if (format[i] == t[j].op[0])
+			if (format[i] == t[j].c)
 			{
 				t[j].f(sep, args);
 				sep = ", ";
