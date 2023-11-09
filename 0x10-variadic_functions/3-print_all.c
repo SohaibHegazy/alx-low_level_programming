@@ -57,7 +57,7 @@ void format_s(char *sep, va_list args)
 {
 	char *ptr = va_arg(args, char *);
 
-	if (!ptr)
+	if (int)(!ptr)
 		ptr = "(nil)";
 	printf("%s%s", sep, ptr);
 }
@@ -80,7 +80,8 @@ void print_all(const char * const format, ...)
 		{"c", format_c},
 		{"i", format_i},
 		{"f", format_f},
-		{"s", format_s}
+		{"s", format_s},
+		{NULL, NULL}
 	};
 
 	va_start(args, format);
