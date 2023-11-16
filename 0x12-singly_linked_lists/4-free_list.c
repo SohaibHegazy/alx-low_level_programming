@@ -21,8 +21,11 @@ void free_list(list_t *head)
 		{
 			temp = temp->next;
 			head = temp;
+			free(del->str);
 			free(del);
 			del = temp;
 		}
 	}
+	else
+		return;
 }
