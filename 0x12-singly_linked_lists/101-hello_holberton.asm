@@ -15,5 +15,5 @@ _start:
 
 section .data
 
-	msg: DB "Hello, Holberton", 0xA
+	msg: DB 'Hello, Holberton', 0xA, 0
 	len: EQU $ - msg;
