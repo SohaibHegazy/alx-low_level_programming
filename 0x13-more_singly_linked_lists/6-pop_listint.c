@@ -11,7 +11,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *del, *temp;
-	int m = 0;
+	int n = 0;
 
 	if (!head)
 		return (0);
@@ -19,7 +19,7 @@ int pop_listint(listint_t **head)
 	del = *head;
 	temp = *head;
 
-	m = (*head)->n;
+	n = (*head)->n;
 
 	temp = temp->next;
 	free(del);
@@ -28,5 +28,5 @@ int pop_listint(listint_t **head)
 	if (!head)
 		return (0);
 	else
-		return (m);
+		return (n);
 }
