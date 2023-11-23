@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * binary_to_uint - function that converts binary to unsigned int
@@ -13,6 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	const char *ptr;
 	unsigned int n = 0;
 	unsigned int sum = 0;
+	unsigned int num = 1;
 
 	if (!b || (*b != 0 && *b != 1))
 		return (0);
@@ -23,9 +25,10 @@ unsigned int binary_to_uint(const char *b)
 		ptr++;
 	for (n = 0; ptr != b; n++)
 	{
-		sum += (*ptr) * pow(2, n);
+		sum += (*ptr) * num;
 		n++;
 		ptr--;
+		num = num * 2;
 	}
 	return (sum);
 }
