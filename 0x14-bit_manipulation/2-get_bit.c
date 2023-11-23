@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * get_bit - function to get the value of a bit in a number
