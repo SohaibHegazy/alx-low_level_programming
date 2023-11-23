@@ -16,18 +16,20 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int sum = 0;
 	unsigned int num = 1;
 
-	if (!b || (*b != 0 && *b != 1))
+	if (!b)
 		return (0);
 
 	ptr = b;
 
-	while (*ptr)
+	while (*ptr != '\0')
 		ptr++;
 	for (n = 0; ptr != b; n++)
 	{
-		sum += (*ptr) * num;
-		n++;
 		ptr--;
+		if (*ptr != '0' && *ptr != '1')
+			return (0);
+		sum += (*ptr - 48) * num;
+		n++;
 		num = num * 2;
 	}
 	return (sum);
