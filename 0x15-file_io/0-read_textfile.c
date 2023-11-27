@@ -11,22 +11,19 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp = NULL;
-	size_t i = 0;
-	ssize_t n = 1;
+	int fd;
+	char buffer [sizeof(letters)];
+	ssize_t size;
 
 	if (!filename || !letters)
 		return (0);
 
-	fp = fopen(filename, "r");
-	if (!fp)
+	fd = open(filename, 0_RDONLY);
+	if (fd == -1)
 		return (0);
 
-	for (i = 0; i < letters; i++, n++)
-	{
-		char c = fgetc(fp);
-		write(STDOUT_FILENO, c, sizeof(c));
-	}
-	return (n);
-	fclose(fp);
+	size = read(fd, &buffer[0], letters);
+	size = write(STDOUT_FILENO, &buffer[0], size);
+	return (size);
+	close(fd);
 }
