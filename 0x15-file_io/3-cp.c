@@ -19,7 +19,7 @@ int main(int ac, char **av)
 	ssize_t size = 0;
 
 	if (ac != 3)
-		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n"), exit(97);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 
 	fromd = open(av[1], O_RDONLY);
 	if (fromd == -1)
