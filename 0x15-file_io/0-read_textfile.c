@@ -25,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	for (i = 0; i < letters; i++, n++)
 	{
 		char c = fgetc(fp);
-		putchar(c);
+		write(STDOUT_FILENO, c, sizeof(c));
 	}
 	return (n);
 	fclose(fp);
