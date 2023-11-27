@@ -23,7 +23,7 @@ int main(int ac, char **av)
 
 	fromd = open(av[1], O_RDONLY);
 	if (fromd == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", av[1]), exit(98);
 
 	tod = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (tod == -1)
@@ -34,7 +34,7 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 
 	if (size == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", av[1]), exit(98);
 
 	fromd = close(fromd);
 	tod = close(tod);
