@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	for (len = 0, text_content[len] != '\0', len++)
+	for (len = 0; text_content[len] != '\0'; len++)
 		;
 	size = write(fd, text_content, len);
 
