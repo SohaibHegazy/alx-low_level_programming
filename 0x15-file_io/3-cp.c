@@ -20,7 +20,7 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to"), exit(97);
-	
+
 	fromd = open(av[1], O_RDONLY);
 	if (fromd == -1)
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s", av[1]), exit(98);
@@ -29,8 +29,7 @@ int main(int ac, char **av)
 	if (tod == -1)
 		dprintf(STDOUT_FILENO, "Error: Can't write to %s", av[2]), exit(99);
 
-	size = read(fromd, buffer, 1024);
-	while (size > 0)
+	while ((size = read(fromd, buffer, 1024)) > 0)
 		if (write(tod, buffer, 1024) != size)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s", av[2]), exit(99);
 
