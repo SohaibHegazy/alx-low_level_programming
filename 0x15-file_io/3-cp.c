@@ -19,31 +19,31 @@ int main(int ac, char **av)
 	ssize_t size = 0;
 
 	if (ac != 3)
-		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to"), exit(97);
+		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 
 	fromd = open(av[1], O_RDONLY);
 	if (fromd == -1)
-		dprintf(STDOUT_FILENO, "Error: Can't read from file %s", av[1]), exit(98);
+		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 
 	tod = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (tod == -1)
-		dprintf(STDOUT_FILENO, "Error: Can't write to %s", av[2]), exit(99);
+		dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 
 	while ((size = read(fromd, buffer, 1024)) > 0)
 		if (write(tod, buffer, 1024) != size)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s", av[2]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 
 	if (size == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 
 	fromd = close(fromd);
 	tod = close(tod);
 
 	if (fromd)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fromd), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fromd), exit(100);
 
 	if (tod)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fromd), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fromd), exit(100);
 
 	return (EXIT_SUCCESS);
 }
