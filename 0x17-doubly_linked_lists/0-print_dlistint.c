@@ -9,11 +9,11 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_s *ptr = *h, size_t i = 0;
+	size_t i = 0;
 
-	for (i = 0; ptr != '\0'; i++, ptr++)
+	for (i = 0; h != '\0'; i++, h++)
 	{
-		printf("%d\n", ptr->n);
+		printf("%d\n", h->n);
 	}
 	return (i);
 }
