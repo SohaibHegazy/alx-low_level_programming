@@ -15,3 +15,6 @@ size_t dlistint_len(const dlistint_t *h)
 	{
 		i++;
 		h = h->next
+	}
+	return (i)
+}
