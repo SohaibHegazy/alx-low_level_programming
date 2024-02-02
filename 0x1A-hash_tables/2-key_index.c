@@ -4,7 +4,7 @@
  * key_index - function to give the index of a key
  *
  * @key: the key
- * @index: the index
+ * @size: the size
  *
  * Return: the index of the key
  */
