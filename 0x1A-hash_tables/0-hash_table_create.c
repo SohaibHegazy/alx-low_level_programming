@@ -7,7 +7,7 @@
  * hash_table_create - function to create hash table
  *
  * Description: function that takes arg of array size
- * 		to create a hash table
+ * to create a hash table
  *
  * @size: size of array
  *
