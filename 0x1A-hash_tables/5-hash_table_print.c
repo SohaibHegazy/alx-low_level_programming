@@ -12,7 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0;
 	hash_node_t *node;
-	bool printed = false;
+	char printed = 0;
 
 	if (ht == NULL || ht->array == NULL)
 		return;
@@ -24,10 +24,10 @@ void hash_table_print(const hash_table_t *ht)
 		node = ht->array[i];
 		while (node != NULL)
 		{
-			if (printed)
+			if (printed == 0)
 				printf(", ");
 			printf("'%s': '%s'", node->key, node->value);
-			printed = true;
+			printed = 1;
 			node = node->next;
 		}
 		i++;
